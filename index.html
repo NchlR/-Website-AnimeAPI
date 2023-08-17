@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OMD API</title>
     <link rel="stylesheet" href="./style.css" />
+    <script
+    src="https://kit.fontawesome.com/c8e4d183c2.js"
+    crossorigin="anonymous"
+  ></script>
     <script src="./index.js"></script>
   </head>
   <body>
@@ -21,10 +25,25 @@
 
     <main>
       <section id="movie__catalog">
+
+        <div id="search__container">
+            <div class="movie__search">
+              <input type="text" id="searchInput" placeholder="Search movies...">
+            </div>
+            <div>
+              <button id="searchButton">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+
+            <!-- Add a filter later on -->
+
+          </div>
+        </div>
+
         <div class="container">
           <div class="row">
             <div class="movie__list">
-
               <div class="movie">
                 <div class="movie__card">
                   <div class="movie__card--container">
@@ -35,81 +54,7 @@
                     <p>Rank</p>
                   </div>
                 </div>
-                    <div class="movie__title--container">
-                      <p class="movie__title">Movie Name</p>
-                    </div>
               </div>
-              <div class="movie">
-                <div class="movie__card">
-                  <div class="movie__card--container">
-                    <p>Synopsis</p>
-                    <p>Start date</p>
-                    <p>End Date</p>
-                    <p>Genres</p>
-                    <p>Rank</p>
-                  </div>
-                </div>
-                    <div class="movie__title--container">
-                      <p class="movie__title">Movie Name</p>
-                    </div>
-              </div>
-              <div class="movie">
-                <div class="movie__card">
-                  <div class="movie__card--container">
-                    <p>Synopsis</p>
-                    <p>Start date</p>
-                    <p>End Date</p>
-                    <p>Genres</p>
-                    <p>Rank</p>
-                  </div>
-                </div>
-                    <div class="movie__title--container">
-                      <p class="movie__title">Movie Name</p>
-                    </div>
-              </div>
-              <div class="movie">
-                <div class="movie__card">
-                  <div class="movie__card--container">
-                    <p>Synopsis</p>
-                    <p>Start date</p>
-                    <p>End Date</p>
-                    <p>Genres</p>
-                    <p>Rank</p>
-                  </div>
-                </div>
-                    <div class="movie__title--container">
-                      <p class="movie__title">Movie Name</p>
-                    </div>
-              </div>
-              <div class="movie">
-                <div class="movie__card">
-                  <div class="movie__card--container">
-                    <p>Synopsis</p>
-                    <p>Start date</p>
-                    <p>End Date</p>
-                    <p>Genres</p>
-                    <p>Rank</p>
-                  </div>
-                </div>
-                    <div class="movie__title--container">
-                      <p class="movie__title">Movie Name</p>
-                    </div>
-              </div>
-              <div class="movie">
-                <div class="movie__card">
-                  <div class="movie__card--container">
-                    <p>Synopsis</p>
-                    <p>Start date</p>
-                    <p>End Date</p>
-                    <p>Genres</p>
-                    <p>Rank</p>
-                  </div>
-                </div>
-                    <div class="movie__title--container">
-                      <p class="movie__title">Movie Name</p>
-                    </div>
-              </div>
-
             </div>
           </div>
         </div>
