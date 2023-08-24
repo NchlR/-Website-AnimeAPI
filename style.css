@@ -98,6 +98,7 @@ nav {
   height: 32px;
   padding-left: 8px;
   background-color: #393e46;
+  color: #f2f2f2;
 }
 
 #searchButton {
@@ -125,6 +126,7 @@ nav {
 .movie__list {
   width: auto;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -159,8 +161,12 @@ nav {
 }
 
 .movie__title{
-  width: 50%;
-  text-align: center;
+ padding: 0 8px;
+}
+
+.titleYear__card {
+  display: flex;
+  padding: 8px;
 }
 
 /* FOOTER */
