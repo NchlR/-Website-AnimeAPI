@@ -14,18 +14,20 @@ document.addEventListener("DOMContentLoaded", function () {
             const apiData = await apiURL.json();
 
             if (apiData.Search) {
-                const first9Movies = apiData.Search.slice(0, 9); // Adjust the slice to 9
+                const first9Movies = apiData.Search.slice(0, 9); // Adjust the slice to see more
                 const movieCardsHTML = first9Movies
                     .map(
                         (movie) =>
                             `<div class="movie__card">
-                            <div class="movie__card--container">
-                            <img src="${movie.Poster}" alt="${movie.Title} Poster">
-                            <div class="titleYear__card">
-                                <h3 class="movie__title">${movie.Title}</h3> <p>(${movie.Year})</p>
-                            </div>    
-                            </div>
-                        </div>`
+                                <div class="movie__card--container">
+                                        <div class="poster__container">
+                                            <img src="${movie.Poster}" alt="${movie.Title} Poster">
+                                        </div>
+                                        <div class="titleYear__card">
+                                            <h3 class="movie__title">${movie.Title}</h3> <p>(${movie.Year})</p>
+                                        </div> 
+                                </div>
+                             </div>`
                     )
                     .join("");
 
